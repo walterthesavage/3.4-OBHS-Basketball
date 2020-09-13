@@ -43,7 +43,7 @@ html {
 footer {
 	text-align: left;
 	background-color: #097cc2;
-	padding: 50px;
+	padding: 50px 75px;
 }
 footer a {
 	font-family: 'Bebas Neue', cursive;
@@ -66,7 +66,11 @@ footer img {
 .facebook_img {
 	height: 50px;
 }
+.facebook_img:hover {
+	opacity: 0.7;
+}
 /* CARDS */
+
 
 /* Float four columns side by side */
 
@@ -100,7 +104,11 @@ footer img {
 /* BODY */
 
 .main_content {
-	margin: 0 100px;
+	margin: 0 75px;
+}
+.main_content p{
+	font-family: 'Mukta', sans-serif;
+	font-size: 120%;
 }
 .hero_image {
 	width: 100%;
@@ -112,7 +120,45 @@ h1 {
 	margin: 0 75px;
 	text-align: center;
 }
-
+h2 {
+	font-family: 'Bebas Neue', cursive;
+	color: #022c43;
+	font-size: 300%;
+	text-align: center;
+}
+/* NEWS */
+.row_v2 {
+	margin: 0 -5px;
+}
+.row_v2:after {
+	content: "";
+  	display: table;
+  	clear: both;
+}
+.news_story {
+	padding: 1.5rem;
+	margin: 10px;
+	float: left;
+  	width: 48.75%;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 15px 0 #022c43B3;
+	border-radius: 10px;
+}
+.news_story  ion-icon{
+	font-size: 2rem;
+	padding: 20px;
+}
+span {
+	font-family: 'Mukta', sans-serif;
+	font-size: 100%;
+}
+db {
+	display: flex;
+	align-items: center;
+}
+.news_img {
+	width: 100%;
+}
 /* GALLERY */
 .container{
 	width: 100%;
