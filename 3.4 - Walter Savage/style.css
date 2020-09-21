@@ -71,7 +71,6 @@ footer img {
 }
 /* CARDS */
 
-
 /* Float four columns side by side */
 
 .column {
@@ -97,16 +96,18 @@ footer img {
 	text-align: center;
 	background-color: #f1f1f1;
 }
-.card img:hover{
+.card img{
+	width: 100%;
+}
+.card img:hover {
 	opacity: 0.7;
 }
-
 /* BODY */
 
 .main_content {
 	margin: 0 75px;
 }
-.main_content p{
+.main_content p {
 	font-family: 'Mukta', sans-serif;
 	font-size: 120%;
 }
@@ -115,7 +116,7 @@ footer img {
 }
 h1 {
 	font-family: 'Bebas Neue', cursive;
-	font-size: 100px;
+	font-size: 750%;
 	color: #022c43;
 	margin: 0 75px;
 	text-align: center;
@@ -127,24 +128,25 @@ h2 {
 	text-align: center;
 }
 /* NEWS */
+
 .row_v2 {
 	margin: 0 -5px;
 }
 .row_v2:after {
 	content: "";
-  	display: table;
-  	clear: both;
+	display: table;
+	clear: both;
 }
 .news_story {
 	padding: 1.5rem;
 	margin: 10px;
 	float: left;
-  	width: 48.75%;
+	width: 48.75%;
 	box-sizing: border-box;
 	box-shadow: 5px 5px 15px 0 #022c43B3;
 	border-radius: 10px;
 }
-.news_story  ion-icon{
+.news_story ion-icon {
 	font-size: 2rem;
 	padding: 20px;
 }
@@ -160,22 +162,23 @@ db {
 	width: 100%;
 }
 /* TEAM */
+
 .column_v2 {
-  float: left;
-  width: 23.75%;
-  padding: 0 10px;
+	float: left;
+	width: 23.75%;
+	padding: 0 10px;
 }
 .player {
 	padding: 1.5rem;
 	margin: 10px;
 	float: left;
-  	width: 100%;
+	width: 100%;
 	box-sizing: border-box;
 	box-shadow: 5px 5px 15px 0 #022c43B3;
 	border-radius: 10px;
 	display: inline-block;
 }
-.player_img{
+.player_img {
 	width: 100%;
 }
 h3 {
@@ -190,27 +193,27 @@ h4 {
 	text-align: center;
 	color: white;
 }
-.player p{
+.player p {
 	font-family: 'Mukta', sans-serif;
 	font-size: 140%;
 	margin: 0 10px;
 }
-.break{
+.break {
 	border-bottom: solid 10px #097cc2;
 }
 .management {
-  position: relative;
-  text-align: center;
-	padding: 0;
-	margin: 0;
+	position: relative;
+	text-align: center;
+	margin: 0 0 -4px 0;
+	visibility: visible;
 }
 .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
-.management h2  {
+.management h2 {
 	font-family: 'Bebas Neue', cursive;
 	color: #097cc2;
 	font-size: 300%;
@@ -223,24 +226,38 @@ h4 {
 	margin: 0 75px;
 	text-align: center;
 }
-
+.management_no_img {
+	visibility: hidden;
+	height: 0px;
+	display: none;
+}
+.management_no_img h2 {
+	font-family: 'Bebas Neue', cursive;
+	color: #097cc2;
+	font-size: 300%;
+	text-align: center;
+}
+.management_no_img h1 {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 100px;
+	color: white;
+	margin: 0 75px;
+	text-align: center;
+}
 /* GALLERY */
-.container{
+
+.container {
 	width: 100%;
 	margin: auto;
 }
-.image-gallery{
+.image-gallery {
 	margin: 0 75px 1.5rem;
 	display: grid;
 	grid-template-rows: auto;
 	grid-gap: 1.5rem;
-	grid-template-areas: 
-		'img-7 img-2 img-3 img-3'
-		'img-7 img-4 img-5 img-6'
-		'img-1 img-1 img-8 img-6';
+	grid-template-areas: 'img-7 img-2 img-3 img-3' 'img-7 img-4 img-5 img-6' 'img-1 img-1 img-8 img-6';
 }
-
-.image-gallery a{
+.image-gallery a {
 	width: 100%;
 	height: 25rem;
 	background-position: center;
@@ -252,81 +269,67 @@ h4 {
 	justify-content: center;
 	text-decoration: none;
 }
-
-.image-gallery a ion-icon{
-	color: rgba(255,255,255, .6);
+.image-gallery a ion-icon {
+	color: rgba(255, 255, 255, .6);
 	font-size: 3rem;
 	position: relative;
 	z-index: 100;
 	padding: 1rem 3rem;
-	border: 2px solid rgba(255,255,255, .6);
+	border: 2px solid rgba(255, 255, 255, .6);
 	border-radius: .4rem;
 	opacity: 0;
 	transition: opacity .5s;
 }
-
-.image-gallery a ::before{
+.image-gallery a ::before {
 	content: '';
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0, 0, 0, .8);
 	opacity: 0;
 	transition: opactiy .5s;
 }
-
-.image-gallery a:hover ion-icon,
-.image-gallery a:hover::before{
+.image-gallery a:hover ion-icon, 
+.image-gallery a:hover::before {
 	opacity: 1;
 }
-
-.img-1{
+.img-1 {
 	grid-area: img-1;
 	background-image: url("images/shooting_brad_1.jpg");
 }
-
-.img-2{
+.img-2 {
 	grid-area: img-2;
 	background-image: url("images/team_talk_2.jpg");
 }
-
-.img-3{
+.img-3 {
 	grid-area: img-3;
 	background-image: url("images/reeves_driving_3.jpg");
 }
-
-.img-4{
+.img-4 {
 	grid-area: img-4;
 	background-image: url("images/injured_angus_4.jpg");
 }
-
-.img-5{
+.img-5 {
 	grid-area: img-5;
 	background-image: url("images/eric_dribbling_5.jpg");
 }
-
-.img-6{
+.img-6 {
 	grid-area: img-6;
 	min-height: 51.5rem;
 	background-image: url("images/ruske_black_white_6.jpg");
 }
-
-.img-7{
+.img-7 {
 	grid-area: img-7;
 	min-height: 51.5rem;
 	background-image: url("images/hbhs_tip_off_7.jpg");
 }
-
-.img-8{
+.img-8 {
 	grid-area: img-8;
 	background-image: url("images/middelton_three_point_8.jpg");
 }
-
-
 /* MEDIA QUERIES */
-
 
 @media screen and (max-width: 1740px) {
 	.main_content {
@@ -338,54 +341,69 @@ h4 {
 		padding: 20px 10px;
 	}
 	.news_story {
-	width: 48%;
-}
+		width: 48%;
+	}
 }
 @media screen and (max-width: 1785px) {
-.column_v2 {
-  float: left;
-  width: 23.75%;
-  padding: 0 10px;
-}
+	.column_v2 {
+		float: left;
+		width: 23.75%;
+		padding: 0 10px;
+	}
 }
 @media screen and (max-width: 1690px) {
-.column_v2 {
-  float: left;
-  width: 22%;
-  padding: 0 10px;
-}
-}
-
-@media screen and (max-width: 1200px) {
-	.image-gallery{
-	grid-template-areas: 
-		'img-7 img-7 img-2 img-2'
-		'img-7 img-7 img-3 img-3'
-		'img-4 img-4 img-5 img-5'
-		'img-6 img-1 img-1 img-1'
-		'img-8 img-8 img-8 img-8';
+	.column_v2 {
+		float: left;
+		width: 22%;
+		padding: 0 10px;
 	}
-	
-	.image-gallery a{
+}
+@media screen and (max-width: 1405px) {
+	.management {
+		visibility: hidden;
+		height: 0px;
+		display: none;
+	}
+	.management_no_img {
+		visibility: visible;
+		height: auto;
+		display: block;
+	}
+	.management_no_img h2 {
+		color: #022c43;
+	}
+	.management_no_img h1 {
+		color: #022c43;
+	}
+	.management_no_img h4 {
+		color: #097cc2;
+		font-family: 'Bebas Neue', cursive;
+		font-size: 150%;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.image-gallery {
+		grid-template-areas: 'img-7 img-7 img-2 img-2' 'img-7 img-7 img-3 img-3' 'img-4 img-4 img-5 img-5' 'img-6 img-1 img-1 img-1' 'img-8 img-8 img-8 img-8';
+	}
+	.image-gallery a {
 		height: 20rem;
 	}
-	
-	.img-7{
+	.img-7 {
 		min-height: 41.5rem
 	}
-	.img-6{
+	.img-6 {
 		min-height: 20rem;
 	}
 	.news_story {
 		width: 100%;
 		float: none;
-}
+	}
 	.column_v2 {
-  width: 47%;
-  padding: 0 10px;
+		width: 47%;
+		padding: 0 10px;
+	}
 }
-}
-
 @media screen and (max-width: 910px) {
 	.topnav a {
 		padding: 40px 20px;
@@ -394,9 +412,9 @@ h4 {
 }
 @media screen and (max-width: 800px) {
 	.column_v2 {
-  width: 100%;
-  padding: 0 10px;
-}
+		width: 100%;
+		padding: 0 10px;
+	}
 }
 @media screen and (max-width: 768px) {
 	.topnav a:not(:first-child) {
@@ -427,31 +445,26 @@ h4 {
 		width: 100%;
 		padding: 20px 10px;
 	}
+	h1 {
+		font-size: 500%;
+	}
 }
 @media screen and (max-width: 600px) {
-	.image-gallery{
-	grid-template-areas: 
-		'img-7 img-7 img-7 img-7'
-		'img-2 img-2 img-2 img-2'
-		'img-3 img-3 img-3 img-3'
-		'img-4 img-4 img-4 img-4'
-		'img-5 img-5 img-5 img-5'
-		'img-6 img-6 img-6 img-6'
-		'img-1 img-1 img-1 img-1'
-		'img-8 img-8 img-8 img-8';
-	margin: 1.5rem 50px;
-		
+	.image-gallery {
+		grid-template-areas: 'img-7 img-7 img-7 img-7' 'img-2 img-2 img-2 img-2' 'img-3 img-3 img-3 img-3' 'img-4 img-4 img-4 img-4' 'img-5 img-5 img-5 img-5' 'img-6 img-6 img-6 img-6' 'img-1 img-1 img-1 img-1' 'img-8 img-8 img-8 img-8';
+		margin: 1.5rem 50px;
 	}
-	
-	.image-gallery a{
+	.image-gallery a {
 		height: 30rem;
 	}
-	
-	.img-7{
+	.img-7 {
 		min-height: 30rem
 	}
-	.img-6{
+	.img-6 {
 		min-height: 30rem;
+	}
+	h1 {
+		font-size: 400%;
 	}
 }
 @media screen and (max-width: 425px) {
@@ -504,8 +517,14 @@ h4 {
 	.main_content {
 		margin: 15px;
 	}
-	.image-gallery{
-		margin: 1.5rem 10px;	
+	.image-gallery {
+		margin: 1.5rem 10px;
+	}
+	.management_no_img h1 {
+		font-size: 300%;
+	}
+	h1 {
+		font-size: 300%;
+		margin: auto;
 	}
 }
-
