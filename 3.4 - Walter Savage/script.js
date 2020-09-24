@@ -1,4 +1,5 @@
 // JavaScript Document
+//Function when called changes the topnav div to and from responsive
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {

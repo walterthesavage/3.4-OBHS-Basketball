@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 	<script src="script.js">
-	</script>
+	</script><!-- Links the JS to the page -->
 	<meta charset="utf-8">
-	<title>OBHS BBALL - Gallery</title>
-	<link href="images/favicon.png" rel="icon" sizes="32x32" type="image/gif">
-	<link href="style.css" rel="stylesheet" type="text/css">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<title>OBHS BBALL - Gallery</title><!-- Title for the website -->
+	<link href="images/favicon.png" rel="icon" sizes="32x32" type="image/gif"><!-- The little icon in the TAB on the web browser -->
+	<link href="style.css" rel="stylesheet" type="text/css"><!-- Links the StyleSheet for styling -->
+	<meta content="width=device-width, initial-scale=1" name="viewport"><!-- Scales the website on landing -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"><!-- Imports the hamburger Icon for the NAV bar -->
 </head>
 <body>
 	<!-- Responsive phone menu -->
 	<div class="topnav" id="myTopnav">
 		<img alt="OBHS Basketball Logo" height="100" src="images/obhs_basketball_logo.png"> <a class="active" href="gallery.html">Gallery</a> <a href="team.html">Team</a> <a href="news.html">News</a> <a href="index.html">Home</a> <a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 	</div>
+	
+	<!-- Header for Gallery page -->
 	<h1>Gallery</h1>
+	<!-- conatiner div sets the width of the image gallery container 'parent element' -->
 	<div class="container">
+		<!-- contains all the images in the gallery/grid -->
 		<div class="image-gallery">
-			<a class="img-1" href="images/shooting_brad_1.jpg"></a> <a class="img-2" href="images/team_talk_2.jpg"></a> <a class="img-3" href="images/reeves_driving_3.jpg"></a> <a class="img-4" href="images/injured_angus_4.jpg"></a> <a class="img-5" href="images/eric_dribbling_5.jpg"></a> <a class="img-6" href="images/ruske_black_white_6.jpg"></a> <a class="img-7" href="images/hbhs_tip_off_7.jpg"></a> <a class="img-8" href="images/middelton_three_point_8.jpg"></a>
+			<!-- each image is hyperlink to a larger picture of the image, also contains the icon that appears when the image is hovered over -->
+			<a class="img-1" href="images/shooting_brad_1.jpg"><ion-icon name="scan-outline"></ion-icon></a> 
+			<a class="img-2" href="images/team_talk_2.jpg"><ion-icon name="scan-outline"></ion-icon></a> 
+			<a class="img-3" href="images/reeves_driving_3.jpg"><ion-icon name="scan-outline"></ion-icon></a> 
+			<a class="img-4" href="images/injured_angus_4.jpg"><ion-icon name="scan-outline"></ion-icon></a> 
+			<a class="img-5" href="images/eric_dribbling_5.jpg"><ion-icon name="scan-outline"></ion-icon></a> 
+			<a class="img-6" href="images/ruske_black_white_6.jpg"><ion-icon name="scan-outline"></ion-icon></a> 
+			<a class="img-7" href="images/hbhs_tip_off_7.jpg" title="HBHS vs OBHS Tip Off 2019"><ion-icon name="scan-outline"></ion-icon></a> 
+			<a class="img-8" href="images/middelton_three_point_8.jpg"><ion-icon name="scan-outline"></ion-icon></a>
 		</div>
 	</div>
+	
+	<!-- Responisve Footer, contains links to pages and the Team Facebook Page -->
 	<footer>
+		<!-- link to the facebook -->
 		<a href="https://www.facebook.com/pages/category/Amateur-Sports-Team/Otago-Boys-High-School-Basketball-133551963895731/"><img alt="Link to OBHS Basktball Facebook Page" class="facebook_img" src="images/facebook_logo.PNG"></a>
+		<!-- Links to the other pages on the site -->
 		<p><a href="index.html">Home</a> | <a href="news.html">News</a> | <a href="team.html">Team</a> | <a href="gallery.html">Gallery</a></p>
+		<!-- contains information on the developer -->
 		<p>Site Developed and Maintained by Walter Savage copyright 2020</p>
 	</footer>
+	
 	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js">
-	</script>
+	</script><!-- links to external JS so icons can be imported -->
 </body>
 </html>
